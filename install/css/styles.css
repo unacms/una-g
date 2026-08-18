@@ -487,13 +487,17 @@ a.bx-btn-disabled,
 .bx-install-audit-body > h1:first-child {
     margin-top: 0 !important;
 }
-.bx-install-audit-body > b:not(.ok):not(.fail):not(.warn):not(.undef) {
+.bx-install-audit-body .bx-audit-section-head {
     display: block;
     font-size: 14px;
     font-weight: 600;
     text-transform: none;
     color: var(--bx-inst-text);
     margin: 16px 0 8px;
+}
+.bx-install-audit-body .bx-audit-section-head b {
+    display: inline;
+    font-weight: 600;
 }
 .bx-install-audit-body ul {
     list-style: none;

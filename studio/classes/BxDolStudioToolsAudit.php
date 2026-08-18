@@ -218,8 +218,8 @@ class BxDolStudioToolsAudit extends BxDol
             $sValue = (!empty($aSetting['op']) && $aSetting['op'] === 'module') ? '' : $this->format_output($r['params']['real_val'], $aSetting);
             $s = $sLabel;
             if ($sValue !== '' && $sValue !== null)
-                $s .= ' = ' . $sValue . ' - ';
-            elseif ($s !== '')
+                $s .= ' = ' . $sValue;
+            if ($s !== '')
                 $s .= ' ';
             $aRet[] = trim($s . $this->getMsgHTML($sName, $r));
         }
@@ -676,9 +676,12 @@ class BxDolStudioToolsAudit extends BxDol
 
     protected function getSection($sTitle, $sTitleAddon, $sContent)
     {
-        $s = '<b>' . $sTitle . '</b>';
+        $s = '<div class="bx-audit-section-head">';
+        if ($sTitle !== '')
+            $s .= '<b>' . $sTitle . '</b>';
         if ($sTitleAddon !== '')
-            $s .= ': ' . $sTitleAddon;
+            $s .= ($sTitle !== '' ? ': ' : '') . $sTitleAddon;
+        $s .= '</div>';
         $s .= '<ul>';
         $s .= $sContent;
         $s .= '</ul>';
@@ -693,9 +696,7 @@ class BxDolStudioToolsAudit extends BxDol
         if ($sValue !== '')
             $s .= ' = ' . $sValue;
         if ($sMsg) {
-            if ($sValue !== '')
-                $s .= ' - ';
-            elseif ($sName !== '')
+            if ($sName !== '' || $sValue !== '')
                 $s .= ' ';
             $s .= $sMsg;
         }
