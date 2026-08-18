@@ -211,7 +211,10 @@ class BxDolStudioToolsAudit extends BxDol
 
         foreach ($aMessages as $sName => $r)
             if ($sType == $r['type'])
-                $aRet[] = "$sName = " . $this->format_output($r['params']['real_val'], isset($this->aPhpSettings[$sName]) ? $this->aPhpSettings[$sName] : '') . " - " . $this->getMsgHTML($sName, $r);        
+                $aSetting = isset($this->aPhpSettings[$sName]) ? $this->aPhpSettings[$sName] : array();
+                $sLabel = (!empty($aSetting['op']) && $aSetting['op'] === 'module') ? $aSetting['val'] : $sName;
+                $sValue = (!empty($aSetting['op']) && $aSetting['op'] === 'module') ? '' : $this->format_output($r['params']['real_val'], $aSetting);
+                $aRet[] = trim($sLabel . ($sValue !== '' && $sValue !== null ? ' = ' . $sValue : '') . ' - ' . $this->getMsgHTML($sName, $r));        
 
         $this->restoreErrorReporting();
 
@@ -273,7 +276,10 @@ class BxDolStudioToolsAudit extends BxDol
         if ($bEcho) {
             $s = '';
             foreach ($aMessages as $sName => $r) {
-                $s .= $this->getBlock($sName, $this->format_output($r['params']['real_val'], isset($this->aPhpSettings[$sName]) ? $this->aPhpSettings[$sName] : ''), $this->getMsgHTML($sName, $r));
+                $aSetting = isset($this->aPhpSettings[$sName]) ? $this->aPhpSettings[$sName] : array();
+                $sLabel = (!empty($aSetting['op']) && $aSetting['op'] === 'module') ? $aSetting['val'] : $sName;
+                $sValue = (!empty($aSetting['op']) && $aSetting['op'] === 'module') ? '' : $this->format_output($r['params']['real_val'], $aSetting);
+                $s .= $this->getBlock($sLabel, $sValue, $this->getMsgHTML($sName, $r));
             }
             echo $this->getSection('PHP', '', $s);
         }

@@ -2598,13 +2598,12 @@
 	<string name="_sys_audit_msg_optimization_warn"><![CDATA[установка PHP-акселератора ускорит кэширование файлов]]></string>
 	<string name="_sys_audit_msg_x_based_cache_engine"><![CDATA[ ({0} кэш-движок)]]></string>
 	<string name="_sys_audit_msg_ffmpeg"><![CDATA[<pre class="code">{0}</pre>если Вы не уверены, корректен ли вывод, может понадобиться <a href="#manual_audit">ручной аудит сервера</a>.]]></string>
-	<string name="_sys_audit_msg_hardware_requirements"><![CDATA[Требования к "железу" невозможно установить автоматически - может быть необходим <a href="#manual_audit">ручной аудит сервера</a>.]]></string>
+	<string name="_sys_audit_msg_hardware_requirements"><![CDATA[Оборудование нельзя проверить автоматически. Может понадобиться <a href="#manual_audit">ручной аудит сервера</a>.]]></string>
 	<string name="_sys_audit_msg_mail_send_failed"><![CDATA[не удалось отослать письмо]]></string>
 	<string name="_sys_audit_msg_mail_sending"><![CDATA[<span id="bx-sys-adm-audit-test-email"><a href="javascript:void(0);" onclick="bx_sys_adm_audit_test_email()">нажмите здесь</a>, чтобы отослать тестовое сообщение</span>]]></string>
 	<string name="_sys_audit_msg_mail_sent"><![CDATA[тестовое сообщение отослано, пожалуйста, проверьте {0} эл. ящик]]></string>
 	<string name="_sys_audit_msg_manual_audit"><![CDATA[<p>
-Некоторые пункты не могут быть автоматически определены, ручной аудит сервера необходим для проверки. 
-Если Вы не знаете, как провести его самостоятельно, Вы можете запросить <a target="_blank" href="mailto:team@unacms.com?subject=Ручной аудит сервера">ручной аудит сервера</a>.
+Некоторые проверки нужно сделать вручную. Если нужна помощь, <a target="_blank" href="mailto:team@unacms.com?subject=Ручной аудит сервера">отправьте запрос на аудит сервера</a>.
 </p>]]></string>
 	<string name="_sys_audit_msg_must_be"><![CDATA[нужно {0} {1}]]></string>
 	<string name="_sys_audit_msg_optimization_apache_module"><![CDATA[Чтобы применить эту оптимизацию, Вам нужно иметь <b>{0}</b> - {1}]]></string>
@@ -2612,12 +2611,12 @@
 	<string name="_sys_audit_msg_php_accelerator_missing"><![CDATA[Можно значительно ускорить работу скрипта, если установить PHP-акселератор]]></string>
 	<string name="_sys_audit_msg_php_setup_inefficient"><![CDATA[Ваши PHP-настройки могут быть очень неэффективными, <a href="javascript:void(0)" onclick="bx_sys_adm_audit_phpinfo()">проверьте их</a> и попробуйте переключиться на mod_php, apache dso module или FastCGI]]></string>
 	<string name="_sys_audit_msg_serverside_compression"><![CDATA[
-может быть проверено <a href="#manual_audit">вручную</a> или с помощью интсрумента "Page Speed", встроенного в браузер.<br />
-Если он не задействован, тогда попробуйте применить эту оптимизацию, так как она улучшает скорость сайта и сохраняет трафик.<br />{0}]]></string>
+может быть проверено <a href="#manual_audit">вручную</a> или с помощью инструмента PageSpeed, встроенного в браузер.<br />
+Если он не задействован, тогда попробуйте применить эту оптимизацию, так как она улучшает скорость сайта и экономит трафик.<br />{0}]]></string>
 	<string name="_sys_audit_msg_should_be"><![CDATA[хорошо бы {0} {1}]]></string>
 	<string name="_sys_audit_msg_userside_caching"><![CDATA[
-<a href="{0}">нажмите здесь для проверки в Google Page Speed</a><br />
-Если он не задействован, тогда попробуйте применить эту оптимизацию, так как она улучшает скорость сайта и сохраняет трафик.<br />{1}]]></string>
+<a href="{0}">нажмите здесь для проверки в Google PageSpeed</a><br />
+Если он не задействован, тогда попробуйте применить эту оптимизацию, так как она улучшает скорость сайта и экономит трафик.<br />{1}]]></string>
 	<string name="_sys_audit_msg_value_checking_failed"><![CDATA[проверка значения не удалась]]></string>
 	<string name="_sys_audit_msg_version_is_incompatible"><![CDATA[Ваша версия несовместима с UNA, нужно как минимум {0}]]></string>
 	<string name="_sys_audit_msg_version_is_outdated"><![CDATA[Ваша версия устарела, может потребоваться обновление до последней версии {0}]]></string>
@@ -2630,7 +2629,7 @@
 	<string name="_sys_audit_serverside_compression"><![CDATA[Сжатие содержимого на стороне сервера]]></string>
 	<string name="_sys_audit_title_fail"><![CDATA[Ошибка]]></string>
 	<string name="_sys_audit_title_ok"><![CDATA[Пройдено]]></string>
-	<string name="_sys_audit_title_undef"><![CDATA[Не определено]]></string>
+	<string name="_sys_audit_title_undef"><![CDATA[Неизвестно]]></string>
 	<string name="_sys_audit_title_warn"><![CDATA[Предупреждение]]></string>
 	<string name="_sys_audit_userside_caching"><![CDATA[Кэширование статичного содержимого на стороне пользователя]]></string>
 	<string name="_sys_audit_version"><![CDATA[версия]]></string>
