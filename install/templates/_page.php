@@ -22,7 +22,7 @@
             </div>
             <?php if (!empty($aToolbarItem)): ?>
             <a class="bx-install-help" title="<?=$aToolbarItem['title']; ?>" href="<?=$aToolbarItem['link']; ?>" target="<?=$aToolbarItem['target']; ?>">
-                Help
+                <?php echo _t('_sys_inst_help'); ?>
             </a>
             <?php endif; ?>
         </div>
