@@ -26,7 +26,7 @@ if (!file_exists("./inc/header.inc.php")) {
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title><?php echo htmlspecialchars($sTitle, ENT_QUOTES, 'UTF-8'); ?></title>
 <?php if ($bHasInstaller): ?>
-    <meta http-equiv="refresh" content="0;url=install/index.php" />
+    <meta http-equiv="refresh" content="2;url=install/index.php" />
 <?php endif; ?>
     <style>
         :root {
@@ -82,7 +82,7 @@ if (!file_exists("./inc/header.inc.php")) {
         <p class="bx-install-flash-pulse"><?php echo htmlspecialchars($sTitle, ENT_QUOTES, 'UTF-8'); ?></p>
     </div>
 <?php if ($bHasInstaller): ?>
-    <script>location.href = 'install/index.php';</script>
+    <script>setTimeout(function () { location.href = 'install/index.php'; }, 1400);</script>
 <?php endif; ?>
 </body>
 </html>
