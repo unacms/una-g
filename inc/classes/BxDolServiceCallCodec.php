@@ -1,4 +1,4 @@
-<?php defined('BX_DOL') or defined('BX_DOL_INSTALL') or define('BX_DOL_SERVICE_CALL_CODEC', 1);
+<?php defined('BX_DOL') or die('hack attempt');
 /**
  * Copyright (c) UNA, Inc - https://una.io
  * MIT License - https://opensource.org/licenses/MIT

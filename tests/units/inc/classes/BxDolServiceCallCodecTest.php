@@ -8,6 +8,8 @@ class BxDolServiceCallCodecTest extends \PHPUnit\Framework\TestCase
 {
     public static function setUpBeforeClass(): void
     {
+        if (!defined('BX_DOL'))
+            define('BX_DOL', 1);
         if (!class_exists('BxDolServiceCallCodec', false)) {
             require_once dirname(__DIR__, 4) . '/inc/classes/BxDolServiceCallCodec.php';
         }
