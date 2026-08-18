@@ -53,6 +53,11 @@ class BxDolInstallLang
         return $sKey;
     }
 
+    public function getLang()
+    {
+        return $this->_sLang;
+    }
+
     public function getAvailableLanguages ()
     {
         $aRet = array();
