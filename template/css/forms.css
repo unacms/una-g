@@ -633,8 +633,14 @@
 
 /* Location field */
 
+.bx-form-input-location-cont {
+    display: block;
+    width: 100%;
+}
+
 .bx-form-input-location-grid {
     display: grid;
+    width: 100%;
     grid-template-columns: repeat(3, minmax(0, 1fr));
     align-items: stretch;
     gap: 8px;

@@ -115,8 +115,8 @@ div.bx-std-pcap-mp-right div.bx-std-pcap-action {
  */
 div.bx-std-pmen-item {
     position: relative;
-    height: 3.5rem;
-    margin-top: 0.125rem;
+    height: 3rem;
+
 
     border-radius: 0.75rem;
 
@@ -137,7 +137,7 @@ div.bx-std-pmen-item-cnt {
     -webkit-flex-wrap: nowrap;
     flex-wrap: nowrap;
 
-    padding: 0.5rem;
+    padding: 0.375rem;
 
     text-overflow: ellipsis;
     overflow: hidden;
@@ -150,11 +150,11 @@ div.bx-std-pmen-item .bx-std-pmen-ic-icon {
     display: none;
     flex: 0 0 auto;
 
-    width: 2.5rem;
-    height: 2.5rem;
+    width: 2.25rem;
+    height: 2.25rem;
     box-sizing: border-box;
 
-    margin-right: 1rem;
+    margin-right: 0.75rem;
     
     border-radius: 0.5rem;
     background-repeat: no-repeat;

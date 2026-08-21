@@ -156,6 +156,10 @@ module.exports = {
         flex: {
             2: '2 2 0%',
         },
+        boxShadow: {
+            'card-outline': 'inset 0px 0px 0px 0px #00000014, inset 0 0 0 1px #fff, 0 1px 3px -1px #0000000d',
+            'card-outline-deep': 'inset 0 0 0 1px #ffffff06, inset 0 0 0 0px #ffffff06, 0 1px 3px -1px #00000080',
+        },
         translate: {
             '5/4': '125%',
         },

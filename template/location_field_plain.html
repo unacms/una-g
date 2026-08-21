@@ -1,4 +1,32 @@
-
+<style>
+.bx-form-input-location-__name__.bx-form-input-location-cont {
+    display: block !important;
+    width: 100%;
+}
+.bx-form-input-location-__name__ .bx-form-input-location-grid {
+    display: grid !important;
+    width: 100%;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    align-items: stretch;
+    gap: 8px;
+}
+.bx-form-input-location-__name__.minimized .bx-form-input-location-grid {
+    grid-template-columns: 1fr;
+}
+.bx-form-input-location-__name__ .bx-form-input-location-grid > input[type="hidden"] {
+    display: none !important;
+}
+.bx-form-input-location-__name__ .bx-form-input-location-grid > input:not([type="hidden"]),
+.bx-form-input-location-__name__ .bx-form-input-location-grid > select {
+    display: block;
+    float: none;
+    margin: 0 !important;
+    width: 100% !important;
+    min-width: 0;
+    max-width: none !important;
+    box-sizing: border-box;
+}
+</style>
 <div class="bx-form-input-location-__name__ __minimized__ bx-form-input-location-cont">
     <div class="bx-form-input-location-grid">
         __inputs__

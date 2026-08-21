@@ -8,8 +8,17 @@ div.bx-std-menu-top-wrp {
     height: 4.5rem;
 }
 div.bx-std-menu-top-gap {
-    box-shadow: 0px 1px 0px 0px rgba(0, 0, 0, 0.05);
     backdrop-filter: blur(16px);
+}
+
+div.shadow-card-outline {
+    box-shadow: inset 0px 0px 0px 0px rgba(0, 0, 0, 0.05), inset 0 0 0 1px #fff, 0 2px 6px -2px rgba(0, 0, 0, 0.1);
+}
+
+html.dark div.shadow-card-outline,
+.dark div.shadow-card-outline,
+.dark .dark\:shadow-card-outline-deep {
+    box-shadow: inset 0 0 0 0px #00000080, inset 0 0 0 1px #ffffff06, 0 1px 3px -1px #00000080;
 }
 div.bx-std-menu-top-wrp .bx-std-menu-top.bx-std-menu-top-center:first-child {
     padding-left: 0.75rem;
@@ -32,7 +41,7 @@ div.bx-std-menu-top.bx-std-menu-top-center {
     z-index: 1;
     -webkit-flex-grow: 2;
     flex-grow: 2;
-    height: 3.5rem;
+    height: 3rem;
 }
 div.bx-std-menu-top:nth-child(1).bx-std-menu-top-center {
     position: relative;
@@ -55,8 +64,8 @@ div.bx-std-menu-top-center ul {
     
 }
 div.bx-std-menu-top-left {
-    padding-left: 0.25rem;
-    line-height: 4rem;
+    padding-left: 0rem;
+    line-height: 3rem;
     text-align: left;
     font-size: 1.5rem;
 }
@@ -99,8 +108,8 @@ div.bx-std-menu-top .bx-menu-top-center li {
     -webkit-align-items: center;
     align-items: center;
 
-    width: 3.0rem;
-    height: 3.5rem;
+    width: 3rem;
+    height: 3rem;
 }
 
 div.bx-std-menu-top .bx-menu-breadcrumb li.bx-menu-bc-div img {
